@@ -35,9 +35,9 @@ app.post('/upload', upload.single('photo'), (req, res) => {
             res.status(500).send('Error sending photo to Telegram.');
         });
 
-    // Optionally delete the photo after sending
+  /*  // Optionally delete the photo after sending
     fs.unlink(photoPath, () => {});
-});
+}); */
 
 // Start the server
 app.listen(PORT, () => {
