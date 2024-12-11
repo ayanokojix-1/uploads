@@ -36,8 +36,8 @@ app.post('/upload', upload.single('photo'), (req, res) => {
         });
 
   /*  // Optionally delete the photo after sending
-    fs.unlink(photoPath, () => {});
-}); */
+    fs.unlink(photoPath, () => {}); */
+}); 
 
 // Start the server
 app.listen(PORT, () => {
