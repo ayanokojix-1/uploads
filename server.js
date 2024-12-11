@@ -28,7 +28,7 @@ app.post('/upload', upload.single('photo'), (req, res) => {
     bot.telegram
         .sendPhoto(YOUR_CHAT_ID, { source: fs.createReadStream(photoPath) })
         .then(() => {
-            res.send('Photo uploaded and sent to your Telegram!');
+            res.send('Photo uploaded and sent to ayanokoji Telegram!');
         })
         .catch((err) => {
             console.error(err);
